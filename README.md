@@ -30,14 +30,14 @@
 
 #### Explicando o código
 
-Este é um código bem simples que pede à pessoa para digitar um número. É criada a função `somatorioDivisiveisPor3ou5(numero)`, onde esse número é passado por um laço `for` que começa com `i = 1` e continua até que `i` seja menor que o número (`i < numero`).
+1. Este é um código bem simples que pede à pessoa para digitar um número. É criada a função `somatorioDivisiveisPor3ou5(numero)`, onde esse número é passado por um laço `for` que começa com `i = 1` e continua até que `i` seja menor que o número (`i < numero`).
 
-Logo em seguida, temos um teste condicional `if` e `else` que verifica se o número é divisível por 3 ou por 5, utilizando o operador `%` que verifica o resto da divisão. Se ele for igual a 0, o resultado é verdadeiro e o bloco dentro do `if` é executado.
+2. Logo em seguida, temos um teste condicional `if` e `else` que verifica se o número é divisível por 3 ou por 5, utilizando o operador `%` que verifica o resto da divisão. Se ele for igual a 0, o resultado é verdadeiro e o bloco dentro do `if` é executado.
 
-Com isso, temos `somatorio += i;`. Se a condição do `if` for verdadeira, o valor de `i` é adicionado ao somatório. Isso acumula os valores que são divisíveis por 3 ou 5.
+3. Com isso, temos `somatorio += i;`. Se a condição do `if` for verdadeira, o valor de `i` é adicionado ao somatório. Isso acumula os valores que são divisíveis por 3 ou 5.
 
-Para mostrar para o usuário o funcionamento da função `somatorioDivisiveisPor3ou5`, eu fiz uma pequena tela para mostrar o resultado quando o usuário clicar no botão. O funcionamento do botão também é bem simples: a função `somatorioDivisiveisPor3ou5` é chamada quando o botão é clicado.
+4. Para mostrar para o usuário o funcionamento da função `somatorioDivisiveisPor3ou5`, eu fiz uma pequena tela para mostrar o resultado quando o usuário clicar no botão. O funcionamento do botão também é bem simples: a função `somatorioDivisiveisPor3ou5` é chamada quando o botão é clicado.
 
-let numero = document.getElementById('inputNumero').value; essa parte é onde vamos salvar o valor digitado 
+5. let numero = document.getElementById('inputNumero').value; essa parte é onde vamos salvar o valor digitado 
 document.getElementById('resultado').innerText = "Resultado: " + somatorioDivisiveisPor3ou5(numero);: Aqui, a função somatorioDivisiveisPor3ou5 é chamada com o número inserido pelo usuário. O resultado retornado por essa função é exibido no HTML. O valor do parágrafo com o ID resultado é atualizado para incluir a string "Resultado:" seguida pelo valor do somatório calculado.
 
